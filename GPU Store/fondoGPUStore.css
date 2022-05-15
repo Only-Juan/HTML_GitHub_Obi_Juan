@@ -1,0 +1,9 @@
+body {
+  font-family:sans-serif;
+  color: rgb(129, 145, 233);
+  margin: 0;
+  padding: 0;
+  background: url(/HTML_GitHub_Obi_Juan/Imagenes/game_over.jpg);
+  background-size: cover;
+  background-position: center;
+}

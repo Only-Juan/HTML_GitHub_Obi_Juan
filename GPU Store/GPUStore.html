@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" type="text/css" href="fondoGPUStore.css">
+  <title>Game Over</title>
+  <script>
+    (function (){
+               var fecha = new Date();
+               document.write(fecha);
+           }());
+    </script>
+</head>
+<body>
+  <center>VISITAS: <h3 id="visitas"> </h3></center>
+  <center><nav>
+  <h1>Bienvenido a Game Over</h1>
+  <h2>¿Buscas Una Tarjeta Grafica con Estilo y Poder?</h2>
+  <p>
+    Te recomendamos las siguientes:
+    <ol>
+    <li>GIGABYTE AORUS</li>
+    <li>ASUS ROG STRIX</li><
+  </ol>
+  </p>
+  <h2>Gigabyte Aorus </h2>
+  <a href="Gigabyte.html"><img src="../Imagenes/GIGABYTE/gpu_gigabyte.jpg" height="230" width="350"></a>
+  <p><h3> Compra Tu GPU Gigabyte <a href="https://www.amazon.com/s?k=gigabyte&rh=n%3A17923671011%2Cn%3A284822&dc&language=es&__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2JCL9KMC3VTRT&qid=1652556155&rnid=2941120011&sprefix=gigabyte%2Caps%2C776&ref=sr_nr_n_4">Aquí </a></h3></p>
+  <h2>ASUS ROG STRIX</h2>
+  <a href="Asus.html"><img src="../Imagenes/ASUS/gpu_asus.jpg" height="230" width="350"></a>
+  <p><h3> Compra Tu GPU ASUS <a href="https://www.amazon.com/s?k=asus+rog+strix&rh=n%3A541966%2Cn%3A284822&dc&language=es&__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&qid=1652556275&rnid=2941120011&ref=sr_nr_n_5">Aquí </a></h3></p>
+  <h2>También Te Puede Interesar:</h2>
+  <p>
+    <ul>
+    <li>SAPPHIRE</li>
+    <a href="#"><img src="../Imagenes/+Imagenes/Sapphire.jpg" height="250" width="350"></a>
+    <li>POWERCOLOR</li>
+    <a href="#"><img src="../Imagenes/+Imagenes/PowerColor-Radeon.jpg" height="260" width="500"></a>
+    <li>ASROCK</li>
+    <a href="#"><img src="../Imagenes/+Imagenes/ASRockAMD.jpg" height="250" width="400"></a>
+    </ul>
+  </p>
+</nav></center>
+<script>
+  let visitasActuales = localStorage.getItem("visitas");
+      if (visitasActuales){
+        let aumento = parseInt(visitasActuales) + 1;
+        document.getElementById("visitas").innerHTML = aumento;
+        localStorage.setItem("visitas", aumento);
+      }else{
+        localStorage.setItem("visitas", 0);
+        document.getElementById("visitas").innerHTML = 0;
+      }
+</script>
+</body>
+</html>
